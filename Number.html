@@ -1,0 +1,25 @@
+<html>
+<body>
+
+
+  <p><h2>Check if the Input is a number?</h2></p>
+  <input id="n">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    var x, text;
+
+    x = document.getElementById("n").value;
+
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input not valid";
+      } else {
+          text = "Input OK";
+      }
+      document.getElementById("demo").innerHTML = text;
+      alert(text);
+}
+</script>
+</body>
